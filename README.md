@@ -12,17 +12,18 @@ Schedulable Utilization of Rate Monotonic Algorithm (RM)
 The case in which Deadline (Dk) is not equal to period. We will assume the deadline is some multiple 'v' of the period
 
 
-Dk = v.Pk 
+**Dk = v.Pk** 
 
 Here 'Dk' is relative deadline.
 'p' is the multiple factor.
 'Pk' is the period of respective task.
 
-So for 0 <= v <= 0.5, 			Urm (n,v)  =  v     			   		 
+
+** So for 0 <= v <= 0.5, 			Urm (n,v)  =  v     			   		 
 
 So for 0.5 <= v <= 1, 			Urm (n,v)  =    n((2v)^(1/n) -1)+1-v      		
 
-So for v = 2,3,4,5......integer 	Urm (n,v)  =    v(n-1)[(((v+1)/v)^((1/n)-1)) - 1 ]      
+So for v = 2,3,4,5......integer, 	Urm (n,v)  =    v(n-1)[(((v+1)/v)^((1/n)-1)) - 1 ] **      
 
 
 Note:- This method is only applicable if the ratio (v) is same for all task. Also it is not aplicable when value of v will be fractional numbers greater than 1. i.e 1.5,2.5 ......
